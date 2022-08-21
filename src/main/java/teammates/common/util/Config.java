@@ -112,7 +112,7 @@ public final class Config {
 
     static {
         Properties properties = new Properties();
-        try (InputStream buildPropStream = FileHelper.getResourceAsStream("build.properties")) {
+        try (InputStream buildPropStream = FileHelper.getResourceAsStream("gradle.properties")) {
             properties.load(buildPropStream);
         } catch (IOException e) {
             assert false;
